@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>JavaScript Reserved Words</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+
+<style>
+
+  body {
+	  background: rgb(255, 255, 255)  no-repeat fixed center;
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+  	.banner {
+	  background: linear-gradient(180deg,#edf105,#f19305f3);
+	  color: #050505;
+	  padding: 14px 12px;
+	  text-align: center;
+	  font-size: 1.2rem;
+	  font-weight: 700;
+	  letter-spacing: 0.5px;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+	}
+
+	.banner small {
+	  display: block;
+	  font-weight: 400;
+	  font-size: 0.6rem;
+	  opacity: 0.85;
+	}
+
+  end-of-page {
+    margin-bottom: 80px;
+  }
+
+  table.rw-table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  	.gap {
+		margin: 10px;
+	}
+
+</style>
+
+
+</head>
+<body>
+  <div class="gap">
+		<div class="banner">Soley's Design Notes</div>
+<h1>JavaScript Reserved Words</h1>
+
+<p>
+In JavaScript you cannot use these reserved words as variables, labels, or 
+function names:</p>
+
+<table class="rw-table">
+<tr>
+<td>abstract</td>
+<td>arguments</td>
+<td>async *</td>
+<td>await *</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>break</td>
+<td>byte</td>
+<td>case</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>char</td>
+<td>class *</td>
+<td>const *</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>debugger</td>
+<td>default</td>
+<td>delete</td>
+</tr>
+<tr>
+<td>do</td>
+<td>double</td>
+<td>else</td>
+<td>enum *</td>
+</tr>
+<tr>
+<td>eval</td>
+<td>export *</td>
+<td>extends *</td>
+<td>false</td>
+</tr>
+<tr>
+<td>final</td>
+<td>finally</td>
+<td>float</td>
+<td>for</td>
+</tr>
+<tr>
+<td>function</td>
+<td>goto</td>
+<td>if</td>
+<td>implements</td>
+</tr>
+<tr>
+<td>function</td>
+<td>import *</td>
+<td>in</td>
+<td>instanceof</td>
+</tr>
+<tr>
+<td>int</td>
+<td>interface</td>
+<td>let *</td>
+<td>long</td>
+</tr>
+<tr>
+<td>native</td>
+<td>new</td>
+<td>null</td>
+<td>package</td>
+</tr>
+<tr>
+<td>private</td>
+<td>protected</td>
+<td>public</td>
+<td>return</td>
+</tr>
+<tr>
+<td>short</td>
+<td>static</td>
+<td>super *</td>
+<td>switch</td>
+</tr>
+<tr>
+<td>synchronized</td>
+<td>this</td>
+<td>throw</td>
+<td>throws</td>
+</tr>
+<tr>
+<td>transient</td>
+<td>true</td>
+<td>try</td>
+<td>typeof</td>
+</tr>
+<tr>
+<td>using *</td>
+<td>var</td>
+<td>void</td>
+<td>volatile</td>
+</tr>
+<tr>
+<td>while</td>
+<td>with</td>
+<td>yield</td>
+</tr>
+</table>
+
+
+<h2>Note</h2>
+<p>Words marked with* have been added to JavaScript from after 2015.</p>
+
+<hr>
+
+<h2>Removed Reserved Words </h2>
+<p>The following reserved words was removed from the ECMAScript 5/6 standard:</p>
+
+
+<table class="rw-table">
+<tr>
+<td>abstract</td>
+<td>boolean</td>
+<td>byte</td>
+<td>char</td>
+</tr>
+<tr>
+<td>double</td>
+<td>final</td>
+<td>float</td>
+<td>goto</td>
+</tr>
+<tr>
+<td>int</td>
+<td>long</td>
+<td>native</td>
+<td>short</td>
+</tr>
+<tr>
+<td>synchronized</td>
+<td>throws</td>
+<td>transient</td>
+<td>volatile</td>
+</tr>
+</table>
+
+<hr>
+
+<h2>JavaScript Objects, Properties, and Methods</h2>
+<p>You should also avoid using the name of  
+JavaScript built-in objects, properties, and methods:</p>
+
+<table  class="rw-table">
+<tr>
+<td>Array</td>
+<td>Date</td>
+<td>eval</td>
+<td>function</td>
+</tr>
+<tr>
+<td>hasOwnProperty</td>
+<td>Infinity</td>
+<td>isFinite</td>
+<td>isNaN</td>
+</tr>
+<tr>
+<td>isPrototypeOf</td>
+<td>length</td>
+<td>Math</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Number</td>
+<td>Object</td>
+<td>prototype</td>
+</tr>
+<tr>
+<td>String</td>
+<td>toString</td>
+<td>undefined</td>
+<td>valueOf</td>
+</tr>
+</table>
+ 
+<hr>
+
+<h2>Java Reserved Words</h2>
+<p>JavaScript is often used together with Java. You should avoid using some Java objects 
+and properties as JavaScript identifiers:</p> 
+<table  class="rw-table">
+<tr>
+<td>getClass</td>
+<td>java</td>
+<td>JavaArray</td>
+<td>javaClass</td>
+</tr>
+<tr>
+<td>JavaObject</td>
+<td>JavaPackage</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<hr>
+
+<h2>Other Reserved Words</h2>
+<p>JavaScript can be used as the programming 
+language in many applications.</p>
+You should also avoid using the name of HTML 
+and Window objects and properties:
+
+<table  class="rw-table">
+<tr>
+<td>alert</td>
+<td>all</td>
+<td>anchor</td>
+</tr>
+<tr>
+<td>anchors</td>
+<td>area</td>
+<td>assign</td>
+</tr>
+<tr>
+<td>blur</td>
+<td>button</td>
+<td>checkbox</td>
+</tr>
+<tr>
+<td>clearInterval</td>
+<td>clearTimeout</td>
+<td>clientInformation</td>
+</tr>
+<tr>
+<td>close</td>
+<td>closed</td>
+<td>confirm</td>
+</tr>
+<tr>
+<td>constructor</td>
+<td>crypto</td>
+<td>decodeURI</td>
+</tr>
+<tr>
+<td>decodeURIComponent</td>
+<td>defaultStatus</td>
+<td>document</td>
+</tr>
+<tr>
+<td>element</td>
+<td>elements</td>
+<td>embed</td>
+</tr>
+<tr>
+<td>embeds</td>
+<td>encodeURI</td>
+<td>encodeURIComponent</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>event</td>
+<td>fileUpload</td>
+</tr>
+<tr>
+<td>focus</td>
+<td>form</td>
+<td>forms</td>
+</tr>
+<tr>
+<td>frame</td>
+<td>innerHeight</td>
+<td>innerWidth</td>
+</tr>
+<tr>
+<td>layer</td>
+<td>layers</td>
+<td>link</td>
+</tr>
+<tr>
+<td>location</td>
+<td>mimeTypes</td>
+<td>navigate</td>
+</tr>
+<tr>
+<td>navigator</td>
+<td>frames</td>
+<td>frameRate</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>history</td>
+<td>image</td>
+</tr>
+<tr>
+<td>images</td>
+<td>offscreenBuffering</td>
+<td>open</td>
+</tr>
+<tr>
+<td>opener</td>
+<td>option</td>
+<td>outerHeight</td>
+</tr>
+<tr>
+<td>outerWidth</td>
+<td>packages</td>
+<td>pageXOffset</td>
+</tr>
+<tr>
+<td>pageYOffset</td>
+<td>parent</td>
+<td>parseFloat</td>
+</tr>
+<tr>
+<td>parseInt</td>
+<td>password</td>
+<td>pkcs11</td>
+</tr>
+<tr>
+<td>plugin</td>
+<td>prompt</td>
+<td>propertyIsEnum</td>
+</tr>
+<tr>
+<td>radio</td>
+<td>reset</td>
+<td>screenX</td>
+</tr>
+<tr>
+<td>screenY</td>
+<td>scroll</td>
+<td>secure</td>
+</tr>
+<tr>
+<td>select</td>
+<td>self</td>
+<td>setInterval</td>
+</tr>
+<tr>
+<td>setTimeout</td>
+<td>status</td>
+<td>submit</td>
+</tr>
+<tr>
+<td>taint</td>
+<td>text</td>
+<td>textarea</td>
+</tr>
+<tr>
+<td>top</td>
+<td>unescape</td>
+<td>untaint</td>
+</tr>
+<tr>
+<td>window</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<hr>
+<!--start-->
+<h2>HTML Event Handlers</h2>
+<p>In addition you should avoid using the name of all HTML event handlers.</p>
+Examples: 
+<br>
+<table  class="rw-table">
+<tr>
+<td>onblur</td>
+<td>onclick</td>
+<td>onerror</td>
+<td>onfocus</td>
+</tr>
+<tr>
+<td>onkeydown</td>
+<td>onkeypress</td>
+<td>onkeyup</td>
+<td>onmouseover</td>
+</tr>
+<tr>
+<td>onload</td>
+<td>onmouseup</td>
+<td>onmousedown</td>
+<td>onsubmit</td>
+</tr>
+</table>
+<div Class="end-of-page"></div>
+</div>
+</body>
+</html>

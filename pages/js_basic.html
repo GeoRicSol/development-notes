@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>JavaScript - Basic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+
+<style>
+
+	body {
+	  background: rgb(255, 255, 255) no-repeat fixed center;
+	  font-family: Arial, sans-serif;
+	}
+
+	td.col1{
+		background:#f19305f3;
+		width: 160px;
+		border: 1px solid black;
+	}
+	td.col2{
+		background:#edf105;
+		width: 160px;
+		border: 1px solid black;
+	}
+  td.col3{
+		background:#f19305f3;
+		width: 160px;
+		border: 1px solid black;
+	}
+
+	.banner {
+	  background: linear-gradient(180deg,#edf105,#f19305f3);
+	  color: #050505;
+	  padding: 14px 12px;
+	  text-align: center;
+	  font-size: 1.2rem;
+	  font-weight: 700;
+	  letter-spacing: 0.5px;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+	}
+
+	.banner small {
+	  display: block;
+	  font-weight: 400;
+	  font-size: 0.6rem;
+	  opacity: 0.85;
+	}
+
+	.gap {
+		margin: 10px;
+	}
+
+		.tab-head {
+		background-color: #f2f2f2;
+		font-size: 1.2rem;
+		font-weight: bold;
+		padding: 4px;
+		text-align: center;
+	}
+
+</style>
+</head>
+
+<body>
+	<div class="gap">
+	<div class="banner">Soley's Design Notes</div>
+	<div class="tab-head">Basic JavaScript</div>
+
+ <h2 class="left"></h2>
+<table>
+<tbody>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_intro.asp">JS Introduction</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_syntax.asp">JS Syntax</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_variables.asp">JS Variables</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_functions.asp">JS Functions</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_objects.asp">JS Objects</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_events.asp">JS Events</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_htmldom.asp">JS HTML DOM</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_ajax_intro.asp">AJAX Intro</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_json.asp">JSON Intro</a></td>
+		</tr>  
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/default.asp">JS Tutorial</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_whereto.asp">JS Where To</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_output.asp">JS Output</a></td>
+		</tr>   
+		</tr>  
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_statements.asp">JS Statements</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_comments.asp">JS Comments</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_let.asp">JS Let</a></td>
+		</tr> 
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_const.asp">JS Const</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_types.asp">JS Types</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_operators.asp">JS Operators</a></td>
+		</tr>  
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_conditionals.asp">JS Conditional</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_loops.asp">JS Loops</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_strings.asp">JS Strings</a></td>
+		</tr>  
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_string_templates.asp">JS String Templates</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_string_methods.asp">JS String Methods</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_string_search.asp">JS String Search</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_string_reference.asp">JS String Reference</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_numbers.asp">JS Numbers</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_number_properties.asp">JS Number Properties</a></td>
+		</tr>  
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_number_methods.asp">JS Number Methods</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_number_reference.asp">JS Number Reference</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_bitwise.asp">JS Bitwise</a></td>
+		</tr>  
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_bigint.asp">JS BigInt</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_function_parameters.asp">Function Parameters</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_function_expressions.asp">Function Expressions</a></td>
+		</tr>  
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_arrow_function.asp">Function Arrows</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_object_properties.asp">Object Properties</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_object_methods.asp">Object Methods</a></td>
+		</tr>  
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_object_display.asp">Object Display</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_dates.asp">JS Dates</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_date_formats.asp">JS Date Formats</a></td>
+		</tr>   
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_date_methods.asp">JS Date Get</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_date_methods_set.asp">JS Date Set</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_date_reference.asp">JS Date Methods</a></td>
+		</tr> 
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_arrays.asp">JS Arrays</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_array_methods.asp">JS Array Methods</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_array_search.asp">JS Array Search</a></td>
+		</tr> 
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_array_sort.asp">JS Array Sort</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_array_iteration.asp">JS Array Iterations</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_array_reference.asp">JS Array Reference</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_typed_arrays.asp">JS Typed Arrays</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_typed_methods.asp">JS Typed Methods</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_typed_reference.asp">JS Typed Reference</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_sets.asp">JS Sets</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_set_methods.asp">JS Set Methods</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_set_logic.asp">JS Set Logic</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_sets_weak.asp">JS Set WeakSet</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_set_reference.asp">JS Set Reference</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_maps.asp">JS Maps</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_map_methods.asp">JS Map Methods</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_maps_weak.asp">JS Map WeakMap</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_map_reference.asp">JS Map Reference</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_math.asp">JS Math</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_math_reference.asp">JS Math Reference</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_random.asp">JS Math Random</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_regexp.asp">JS RegExp</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_regexp_flags.asp">JS RegExp Flags</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_regexp_characters.asp">JS RegExp Classes</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_regexp_meta_characters.asp">JS RegExp Metachars</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_regexp_assertions.asp">JS RegExp Assertions</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_regexp_quantifiers.asp">JS RegExp Quantifiers</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_regexp_patterns.asp">JS RegExp Patterns</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_regexp_objects.asp">JS RegExp Objects</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_regexp_methods.asp">JS RegExp Methods</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_datatypes.asp">JS Data Types</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_typeof.asp">JS typeof</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_tostring.asp">JS toString()</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_type_conversion.asp">JS Type Conversion</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_errors_intro.asp">JS Errors Intro</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_errors_silent.asp">JS Errors Silent</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_errors.asp">JS Error Statements</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_error_object.asp">JS Error Object</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_debugging.asp">JS Debugging</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_scope.asp">JS Scope</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_hoisting.asp">JS Hoisting</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_strict.asp">JS Strict Mode</a></td>
+		</tr>
+		<tr>
+			<td class="col1"><a href="https://www.w3schools.com/js/js_codeblocks.asp">JS Code Blocks</a></td>
+			<td class="col2"><a href="https://www.w3schools.com/js/js_conventions.asp">JS Style Guide</a></td>
+			<td class="col3"><a href="https://www.w3schools.com/js/js_best_practices.asp">JS Best Practices</a></td>
+		</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

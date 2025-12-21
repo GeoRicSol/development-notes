@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Development Notes - HTML5</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+	body {
+	  background: rgb(255, 255, 255) no-repeat fixed center;
+	}
+
+	td.lf1{
+		background:#f19305f3;
+		width: 150px;
+		border: 1px solid black;
+	}
+	td.rh1{
+		background:#f19305f3;
+		width: 700px;
+		border: 1px solid black;
+	}
+	td.rh1ob{
+		background:yellow;
+		width: 700px;
+		border: 1px solid black;
+	}
+	td.lf2{
+		background:#f0f8ff;
+		width: 150px;
+		border: 1px solid black;
+	}
+	td.rh2{
+		background:#f0ffff;
+		width: 700px;
+		border: 1px solid black;
+	}
+	td.rhob{
+		background:yellow;
+		width: 700px;
+		border: 1px solid black;
+	}
+
+
+	.banner {
+	  background: linear-gradient(180deg,#edf105,#f19305f3);
+	  color: #050505;
+	  padding: 14px 12px;
+	  text-align: center;
+	  font-size: 1.2rem;
+	  font-weight: 700;
+	  letter-spacing: 0.5px;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+	}
+
+	.banner small {
+	  display: block;
+	  font-weight: 400;
+	  font-size: 0.6rem;
+	  opacity: 0.85;
+	}
+
+	.subject-links{
+		font-size: 1.1rem;
+		text-decoration: none;
+		color: #0000EE;
+		margin-block-start: 2opx;
+	}
+
+	.gap {
+		margin: 10px;
+	}
+
+	.tab-head {
+		background-color: #f2f2f2;
+		font-size: 1.2rem;
+		font-weight: bold;
+		padding: 10px;
+		text-align: center;
+	}
+
+</style>
+
+</head>
+<body>
+	<div class="banner">Soley's Design Notes</div>
+	<div class="tab-head">HTML Tags List</div>
+	
+<table>
+<tbody>
+								<tr>
+									<td class="lf1"><code>&lt;a&gt;</code></td>
+									<td class="rh1">Defines a hyperlink.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;abbr&gt;</code></td>
+									<td class="rh2">Defines an abbreviated form of a longer word or phrase.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;acronym&gt;</code></td>
+									<td class="lf1"><b>#Obsolete</b> use <code>&lt;abbr&gt;</code> instead.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;address&gt;</code></td>
+									<td class="lf2">Specifies the author's contact information.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;applet&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> use <code>&lt;object&gt;</code> instead.</td>
+								</tr> 
+								<tr>
+									<td class="lf2"><code>&lt;area&gt;</code></td>
+									<td class="lf2">Defines a specific area within an image map.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;article&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Defines an article.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;aside&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Defines some content loosely related to the page content.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;audio&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Embeds a sound, or an audio stream in an HTML document.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;b&gt;</code></td>
+									<td class="lf2">Displays text in a bold style.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;base&gt;</code></td>
+									<td class="lf1">Defines the base URL for all relative URLs in a document.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;basefont-tag&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> - Specifies the base font for a page using CSS instead.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;bdi-tag&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Represents text that is isolated from its surrounding for the purposes of bidirectional text formatting.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;bdo&gt;</code></td>
+									<td class="lf2">Overrides the current text direction.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;big-tag&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> - Specifies the base font for a page using CSS instead.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;blockquote&gt;</code></td>
+									<td class="lf2">Represents a section that is quoted from another source.</td>
+								</tr>								
+								<tr>
+									<td class="lf1"><code>&lt;body&gt;</code></td>
+									<td class="lf1">Defines the document's body.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;br&gt;</code></td>
+									<td class="lf2">Produces a single line break.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;button&gt;</code></td>
+									<td class="lf1">Creates a clickable button.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;canvas&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Defines a region in the document, which can be used to draw graphics on the fly via scripting (usually JavaScript).</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;caption&gt;</code></td>
+									<td class="lf1">Defines the caption or title of the table.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;center&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> -  Align contents in the center using CSS instead.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;cite&gt;</code></td>
+									<td class="lf1">Indicates a citation or reference to another source.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;code&gt;</code></td>
+									<td class="lf2">Specifies text as computer code.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;col&gt;</code></td>
+									<td class="lf1">Defines attribute values for one or more columns in a table.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;colgroup&gt;</code></td>
+									<td class="lf2">Specifies attributes for multiple columns in a table.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;data&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Links a piece of content with a machine-readable translation.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;datalist&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Represents a set of pre-defined options for an "input-tag"<code>&lt;input&gt;</code></a> element.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;dd&gt;</code></td>
+									<td class="lf1">Specifies a description, or value for the term <code>&lt;dt&gt;</code></a> in a description list <code>&lt;dl&gt;</code></a>.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;del&gt;</code></td>
+									<td class="lf2">Represents text that has been deleted from the document.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;details&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Represents a widget from which the user can obtain additional information or controls on-demand.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;dfn&gt;</code></td>
+									<td class="lf2">Specifies a definition.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;dialog&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> -Defines a dialog box or subwindow.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;dir&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> - Use CSS instead.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;div&gt;</code></td>
+									<td class="lf1">Specifies a division or a section in a document.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;dl&gt;</code></td>
+									<td class="lf2">Defines a description list.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;dt&gt;</code></td>
+									<td class="lf1">Defines a term (an item) in a description list.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;em&gt;</code></td>
+									<td class="lf2">Defines emphasized text.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;embed&gt;</code</td>
+									<td class="lf1"><b>New in HTML5</b> - Embeds external application, typically multimedia content like audio or video into an HTML document.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;fieldset&gt;</code></td>
+									<td class="lf2">Specifies a set of related form fields.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;figcaption&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Defines a caption or legend for a figure.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;figure&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Represents a figure illustrated as part of the document.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;font&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> - Specifies the base font for a page using CSS instead.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;footer&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Represents the footer of a document or a section.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;form&gt;</code></td>
+									<td class="lf1">Defines an HTML form for user input.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;frame&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> - Defines a frames. supported. Not supported in HTML5.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;frameset&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> - Defines a collection of frames or other frameset. Not supported in HTML5.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;head&gt;</code></td>
+									<td class="lf2">Defines the head portion of the document that contains information about the document such as title.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;header&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Represents the header of a document or a section.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;hgroup&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Defines a group of headings.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;h1&gt; to &lt;h6&gt;</code></td>
+									<td class="lf1">Defines HTML headings.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;hr&gt;</code></td>
+									<td class="lf2">Produce a horizontal line.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;html&gt;</code></td>
+									<td class="lf1">Defines the root of an HTML document.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;i&gt;</code></td>
+									<td class="lf2">Displays text in an italic style.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;iframe&gt;</code></td>
+									<td class="lf1">Displays a URL in an inline frame.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;img&gt;</code></td>
+									<td class="lf2">Represents an image.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;input&gt;</code></td>
+									<td class="lf1">Defines an input control.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;ins&gt;</code></td>
+									<td class="lf2">Defines a block of text that has been inserted into a document.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;kbd&gt;</code></td>
+									<td class="lf1">Specifies text as keyboard input.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;keygen&gt;</code></a> <span class="badge" title="New in HTML5"></span></td>
+									<td class="lf2"><b>New in HTML5</b> - Represents a control for generating a public-private key pair.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;label&gt;</code></td>
+									<td class="lf1">Defines a label for an <code>&lt;input&gt;</code> control.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;legend&gt;</code></td>
+									<td class="lf2">Defines a caption for a <code>&lt;fieldset&gt;</code> element.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;li&gt;</code></td>
+									<td class="lf1">Defines a list item.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;link&gt;</code></td>
+									<td class="lf2">Defines the relationship between the current document and an external resource.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;main&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Represents the main or dominant content of the document.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;map&gt;</code></td>
+									<td class="lf2">Defines a client-side image-map.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;mark&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Represents text highlighted for reference purposes.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;menu&gt;</code></td>
+									<td class="lf2">Represents a list of commands.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;menuitem&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Defines a list (or menuitem) of commands that a user can perform.</td>
+								</tr>								
+								<tr>
+									<td class="lf2"><code>&lt;meta&gt;</code></td>
+									<td class="lf2">Provides structured metadata about the document content.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;meter&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Represents a scalar measurement within a known range.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;nav&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Defines a section of navigation links.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;noframes&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> - Defines an alternate content that displays in browsers. Not supported in HTML5.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;noscript&gt;</code></td>
+									<td class="lf2">Defines alternative content to display when the browser doesn't support scripting.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;object&gt;</code></td>
+									<td class="lf1">Defines an embedded object.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;ol&gt;</code></td>
+									<td class="lf2">Defines an ordered list.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;optgroup&gt;</code></td>
+									<td class="lf1">Defines a group of related options in a selection list.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;option&gt;</code></td>
+									<td class="lf2">Defines an option in a selection list.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;output&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Represents the result of a calculation.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;p&gt;</code></td>
+									<td class="lf2">Defines a paragraph.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;param&gt;</code></td>
+									<td class="lf1">Defines a parameter for an object or applet element.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;picture&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - >Defines a container for multiple image sources.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;pre&gt;</code></td>
+									<td class="lf1">Defines a block of preformatted text.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;progress&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Represents the completion progress of a task.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;q&gt;</code></td>
+									<td class="lf1">Defines a short inline quotation.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;rp&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Provides fall-back parenthesis for browsers that that don't support ruby annotations.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;rt&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Defines the pronunciation of character presented in a ruby annotations.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;ruby&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Represents a ruby annotation.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;s&gt;</code></td>
+									<td class="lf1">Represents contents that are no longer accurate or no longer relevant.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;samp&gt;</code></td>
+									<td class="lf2">Specifies text as sample output from a computer program.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;script&gt;</code></td>
+									<td class="lf1">Places script in the document for client-side processing.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;section&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Defines a section of a document, such as header, footer etc.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;select&gt;</code></td>
+									<td class="lf1">Defines a selection list within a form.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;small&gt;</code></td>
+									<td class="lf2">Displays text in a smaller size.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;source&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Defines alternative media resources for the media elements like "audio-tag" or "video-tag"</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;span&gt;</code></td>
+									<td class="lf2">Defines an inline styleless section in a document.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;strike&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> - Specifies the base font for a page using CSS instead.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;strong&gt;</code></td>
+									<td class="lf2">Indicate strongly emphasized text.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;style&gt;</code></td>
+									<td class="lf1">Inserts style information (commonly CSS) into the head of a document.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;sub&gt;</code></td>
+									<td class="lf2">Defines subscripted text.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;summary&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Defines a summary for the "details-tag"</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;sup&gt;</code></td>
+									<td class="lf2">Defines superscripted text.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;svg&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Embed SVG (Scalable Vector Graphics) content in an HTML document.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;table&gt;</code></td>
+									<td class="lf2">Defines a data table.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;tbody&gt;</code></td>
+									<td class="lf1">Groups a set of rows defining the main body of the table data.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;td&gt;</code></td>
+									<td class="lf2">Defines a cell in a table.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;template&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Defines the fragments of HTML that should be hidden when the page is loaded, but can be cloned and inserted in the document by JavaScript.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;textarea&gt;</code></td>
+									<td class="lf2">Defines a multi-line text input control (text area).</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;tfoot&gt;</code></td>
+									<td class="lf1">Groups a set of rows summarizing the columns of the table.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;th&gt;</code></td>
+									<td class="lf2">Defines a header cell in a table.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;thead&gt;</code></td>
+									<td class="lf1">Groups a set of rows that describes the column labels of a table.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;time&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Represents a time and/or date.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;title&gt;</code></td>
+									<td class="lf1">Defines a title for the document.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;tr&gt;</code></td>
+									<td class="lf2">Defines a row of cells in a table.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;track&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Defines text tracks for the media elements like "audio-tag"<code>&lt;audio&gt;</code> or "video-tag"<code>&lt;video&gt;</code>.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;tt&gt;</code></td>
+									<td class="rhob"><b>#Obsolete</b> - Displays text in a teletype style. Not supported in HTML5</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;u&gt;</code></td>
+									<td class="lf1">Displays text with an underline.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;ul&gt;</code></td>
+									<td class="lf2">Defines an unordered list.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;var&gt;</code></td>
+									<td class="lf1">Defines a variable.</td>
+								</tr>
+								<tr>
+									<td class="lf2"><code>&lt;video&gt;</code></td>
+									<td class="lf2"><b>New in HTML5</b> - Embeds video content in an HTML document.</td>
+								</tr>
+								<tr>
+									<td class="lf1"><code>&lt;wbr&gt;</code></td>
+									<td class="lf1"><b>New in HTML5</b> - Represents a line break opportunity.</td>
+								</tr>
+							</tbody>
+						</table>
+
+
+
+</body>
+</html>
