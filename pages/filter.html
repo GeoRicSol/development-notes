@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<title>Javascript Example - Table Filter</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+
+// This function executes for each character input in the search field
+function filterSearch() {  
+ 
+  var a, i, j, c, ahref, s, tr, td;
+    // s used to check if any row is visible in a table
+    // a used for tables
+    // i used for inner loop (rows)
+    // j used for outer loop (tables)
+    // c used for search string
+    // ahref used for the text inside the <a> tag
+    // tr used for rows   
+    // td used for cells
+
+    c = document.getElementById("searchstring").value.toUpperCase();
+    a = document.getElementsByClassName("ws-table-all");
+    
+    // Loop through all table rows, and hide those who don't match the search query
+    for (j = 0; j < a.length; j++) {   // outer loop for each table 
+      s = 0;
+      tr = a[j].getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {  // inner loop for each row
+        td = tr[i].getElementsByTagName("td")[0];  // [0] search in 1st column only, [1] search in 2nd column only
+        if (td) {
+          ahref = td.getElementsByTagName("a")[0]; // get the <a> tag text if it exists
+          if (ahref) {                              // if <a> tag exists
+            ahref = ahref.innerHTML;               // get the text inside the <a> tag
+            ahref = ahref.replace("&lt;", "");      // remove < character
+            ahref = ahref.replace("&gt;", "");     // remove > character
+            if (ahref.toUpperCase().indexOf(c) > -1) { // search in <a> tag text
+              tr[i].style.display = "";        // show row if match
+              s = 1;                              // set s to 1 if a row is visible
+            } else {               // if no match 
+              tr[i].style.display = "none";       // hide row if no match
+            }
+          } else {                          // if no <a> tag exists   
+            if (td.innerHTML.toUpperCase().indexOf(c) > -1) { // search in cell text
+              tr[i].style.display = "";        // show row if match
+              s = 1;                        // set s to 1 if a row is visible
+            } else {                 // if no match
+              tr[i].style.display = "none";   // hide row if no match
+            }
+          }
+        }
+        if (i == (tr.length - 1)) { // after last row check if any row is visible
+          if (s == 0) {               // if no row is visible 
+            a[j].style.display = "none";   // hide the table  
+          } else {                     // if a row is visible
+            a[j].style.display = "";  // show the table            
+          }
+        }
+      } // inner loop end
+    } // outer loop end
+}
+
+
+// This function executes for each character input in the search field
+function filterSearch1() {  
+ 
+  var a, i, j, c, ahref, s, tr, td;
+    // s used to check if any row is visible in a table
+    // a used for tables
+    // i used for inner loop (rows)
+    // j used for outer loop (tables)
+    // c used for search string
+    // ahref used for the text inside the <a> tag
+    // tr used for rows   
+    // td used for cells
+
+    c = document.getElementById("searchstring1").value.toUpperCase();
+    a = document.getElementsByClassName("ws-table-all");
+    
+    // Loop through all table rows, and hide those who don't match the search query
+    for (j = 0; j < a.length; j++) {   // outer loop for each table 
+      s = 0;
+      tr = a[j].getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {  // inner loop for each row
+        td = tr[i].getElementsByTagName("td")[1];  // [0] search in 1st column only, [1] search in 2nd column only
+        if (td) {
+          ahref = td.getElementsByTagName("a")[0]; // get the <a> tag text if it exists
+          if (ahref) {                              // if <a> tag exists
+            ahref = ahref.innerHTML;               // get the text inside the <a> tag
+            ahref = ahref.replace("&lt;", "");      // remove < character
+            ahref = ahref.replace("&gt;", "");     // remove > character
+            if (ahref.toUpperCase().indexOf(c) > -1) { // search in <a> tag text
+              tr[i].style.display = "";        // show row if match
+              s = 1;                              // set s to 1 if a row is visible
+            } else {               // if no match 
+              tr[i].style.display = "none";       // hide row if no match
+            }
+          } else {                          // if no <a> tag exists   
+            if (td.innerHTML.toUpperCase().indexOf(c) > -1) { // search in cell text
+              tr[i].style.display = "";        // show row if match
+              s = 1;                        // set s to 1 if a row is visible
+            } else {                 // if no match
+              tr[i].style.display = "none";   // hide row if no match
+            }
+          }
+        }
+        if (i == (tr.length - 1)) { // after last row check if any row is visible
+          if (s == 0) {               // if no row is visible 
+            a[j].style.display = "none";   // hide the table  
+          } else {                     // if a row is visible
+            a[j].style.display = "";  // show the table            
+          }
+        }
+      } // inner loop end
+    } // outer loop end
+}
+
+
+</script>
+
+<style>
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+}
+
+body {
+	  background: rgb(255, 255, 255)  no-repeat fixed center;
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+  #searchicon {
+    background-image: url('https://www.w3schools.com/howto/searchicon.png');
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+  }
+
+  td{
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    background-color: #edf105;
+  }
+
+	.banner {
+	  background: linear-gradient(180deg,#edf105,#f19305f3);
+	  color: #050505;
+	  padding: 14px 12px;
+	  text-align: center;
+	  font-size: 1.2rem;
+	  font-weight: 700;
+	  letter-spacing: 0.5px;
+	  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+	}
+
+	.banner small {
+	  display: block;
+	  font-weight: 400;
+	  font-size: 0.6rem;
+	  opacity: 0.85;
+	}
+
+  	.gap {
+		margin: 10px;
+	}
+</style>
+</head>
+
+<body>
+  <div class="gap">
+<div class="banner">Soley's Design Notes</div>
+<!-- Seach Filter  -->
+<h3>Search column 1</h3>
+<div style="position:relative"><div id="searchicon"></div></div>
+<input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()">
+
+<h3>Search column 2</h3>
+<div style="position:relative"><div id="searchicon"></div></div>
+<input type="text" id="searchstring1" name="search" placeholder="Search.." oninput="filterSearch1()">
+
+<table class="ws-table-all notranslate">
+  <tr>
+    <td>Column 1 Row 1</td>
+    <td>Specifies an accent color for user-interface controls</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/css3_pr_align-content.php">align-content</a></td>
+    <td>Specifies the alignment between the lines inside a flexible container when the items do not use all available space</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/css3_pr_align-items.php">align-items</a></td>
+    <td>Specifies the alignment for items inside a flexible container</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.w3schools.com/cssref/css3_pr_align-self.php">align-self</a></td>
+    <td>Specifies the alignment for selected items inside a flexible container</td>
+  </tr>
+</table>
+</div>
+
+<h2>Filter Source Code</h2>
+<embed src="filter_src.txt" width="100%" height="600px">
+</div>
+</body>
+</html>
