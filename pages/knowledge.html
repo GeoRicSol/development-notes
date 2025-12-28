@@ -8,9 +8,8 @@
 <script>
 
 // This function executes for each character input in the search field
-function filterSearch() {  
- 
-  var a, i, j, c, ahref, s, tr, td;
+function filterSearch() { 
+  var a, i, j, c, c1, ahref, ahref1,s, s1, tr, tit, td, t;
     // s used to check if any row is visible in a table
     // a used for tables
     // i used for inner loop (rows)
@@ -19,17 +18,55 @@ function filterSearch() {
     // ahref used for the text inside the <a> tag
     // tr used for rows   
     // td used for cells
+    // t used for title-tag
 
     c = document.getElementById("searchstring").value.toUpperCase();
-    a = document.getElementsByClassName("ws-table-all");
+    c1 = document.getElementById("searchstring1").value.toUpperCase();
+    a = document.getElementsByClassName("ws-table-all"); 
+    t = document.getElementsByClassName("title-tag"); 
     
     // Loop through all table rows, and hide those who don't match the search query
     for (j = 0; j < a.length; j++) {   // outer loop for each table 
       s = 0;
+      s1 = 0;
       tr = a[j].getElementsByTagName("tr");
       for (i = 0; i < tr.length; i++) {  // inner loop for each row
+        //title seach
+        td = tr[i].getElementsByTagName("td")[0];
+        tit = tr[i].getElementsByTagName("td")[0].getElementsByTagName("div")[0];  // search title
+      
+        if (tit)  {
+          ahref1 = td.getElementsByTagName("div")[0]; // get the <div> tag text if it exists
+          if (ahref1) {                              // if <div> tag exists
+;
+            ahref1 = ahref1.innerHTML;               // get the text inside the <div> tag
+            ahref1 = ahref1.replace("&lt;", "");      // remove < character
+            ahref1 = ahref1.replace("&gt;", "");     // remove > character
+
+            if (ahref1.toUpperCase().indexOf(c1) > -1) { // search in <a> tag text
+              tr[i].style.display = "";        // show row if match
+              s1 = 1;                              // set s to 1 if a row is visible
+             // console.log(ahref1)
+             // console.log(c1)
+            } else {               // if no match 
+              tr[i].style.display = "none";  
+              s1 = 0     // hide row if no match
+            }
+          } else {                          // if no <a> tag exists   
+            if (td.innerHTML.toUpperCase().indexOf(c) > -1) { // search in cell text
+              tr[i].style.display = "";        // show row if match
+              s = 1;                        // set s to 1 if a row is visible
+            } else {                 // if no match
+              tr[i].style.display = "none";   // hide row if no match
+            }
+          }
+        }
+
+
+        //start of description search
         td = tr[i].getElementsByTagName("td")[0];  // [0] search in 1st column only, [1] search in 2nd column only
-        if (td) {
+        //console.log(td); 
+        if (td && s1==1) {
           ahref = td.getElementsByTagName("a")[0]; // get the <a> tag text if it exists
           if (ahref) {                              // if <a> tag exists
             ahref = ahref.innerHTML;               // get the text inside the <a> tag
@@ -50,6 +87,10 @@ function filterSearch() {
             }
           }
         }
+      
+
+        // end of row search
+/*
         if (i == (tr.length - 1)) { // after last row check if any row is visible
           if (s == 0) {               // if no row is visible 
             a[j].style.display = "none";   // hide the table  
@@ -57,66 +98,11 @@ function filterSearch() {
             a[j].style.display = "";  // show the table            
           }
         }
+        */
+
       } // inner loop end
     } // outer loop end
-}
-
-
-// This function executes for each character input in the search field
-function filterSearch1() {  
- 
-  var a, i, j, c, ahref, s, tr, td;
-    // s used to check if any row is visible in a table
-    // a used for tables
-    // i used for inner loop (rows)
-    // j used for outer loop (tables)
-    // c used for search string
-    // ahref used for the text inside the <a> tag
-    // tr used for rows   
-    // td used for cells
-
-    c = document.getElementById("searchstring1").value.toUpperCase();
-    a = document.getElementsByClassName("ws-table-all");
-    
-    // Loop through all table rows, and hide those who don't match the search query
-    for (j = 0; j < a.length; j++) {   // outer loop for each table 
-      s = 0;
-      tr = a[j].getElementsByTagName("tr");
-      for (i = 0; i < tr.length; i++) {  // inner loop for each row
-        td = tr[i].getElementsByTagName("td")[1];  // [0] search in 1st column only, [1] search in 2nd column only
-        if (td) {
-          ahref = td.getElementsByTagName("a")[0]; // get the <a> tag text if it exists
-          if (ahref) {                              // if <a> tag exists
-            ahref = ahref.innerHTML;               // get the text inside the <a> tag
-            ahref = ahref.replace("&lt;", "");      // remove < character
-            ahref = ahref.replace("&gt;", "");     // remove > character
-            if (ahref.toUpperCase().indexOf(c) > -1) { // search in <a> tag text
-              tr[i].style.display = "";        // show row if match
-              s = 1;                              // set s to 1 if a row is visible
-            } else {               // if no match 
-              tr[i].style.display = "none";       // hide row if no match
-            }
-          } else {                          // if no <a> tag exists   
-            if (td.innerHTML.toUpperCase().indexOf(c) > -1) { // search in cell text
-              tr[i].style.display = "";        // show row if match
-              s = 1;                        // set s to 1 if a row is visible
-            } else {                 // if no match
-              tr[i].style.display = "none";   // hide row if no match
-            }
-          }
-        }
-        if (i == (tr.length - 1)) { // after last row check if any row is visible
-          if (s == 0) {               // if no row is visible 
-            a[j].style.display = "none";   // hide the table  
-          } else {                     // if a row is visible
-            a[j].style.display = "";  // show the table            
-          }
-        }
-      } // inner loop end
-    } // outer loop end
-}
-
-
+  }
 </script>
 
 <style>
@@ -131,9 +117,9 @@ input[type=text] {
 }
 
 body {
-	  background: rgb(255, 255, 255)  no-repeat fixed center;
-	  margin: 0;
-	  font-family: Arial, Helvetica, sans-serif;
+	background: rgb(255, 255, 255)  no-repeat fixed center;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
 	}
 
   #searchicon {
@@ -157,16 +143,16 @@ body {
     background-color: #efc2c2;
   }
 
-  .log-title {
-    font-family: monospace;
+  .title-tag {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
     color: black;
-    column-width: 250px;
-    background-color: #ebe5e5;
+    background-color: #cdcbc3;
+    width: 200px;
   }
 
   .log-desc {
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
     color: black;
     column-width: 400px;
@@ -174,25 +160,25 @@ body {
     columns: auto;
   }
 
-	.banner {
-	  background: linear-gradient(180deg,#edf105,#f19305f3);
-	  color: #050505;
-	  padding: 14px 12px;
-	  text-align: center;
-	  font-size: 1.2rem;
-	  font-weight: 700;
-	  letter-spacing: 0.5px;
-	  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+.banner {
+	background: linear-gradient(180deg,#edf105,#f19305f3);
+	color: #050505;
+	padding: 14px 12px;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 	}
 
 	.banner small {
-	  display: block;
-	  font-weight: 400;
-	  font-size: 0.6rem;
-	  opacity: 0.85;
-	}
+	display: block;
+	font-weight: 400;
+	font-size: 0.6rem;
+	opacity: 0.85;
+}
 
-  	.gap {
+  .gap {
 		margin: 10px;
 	}
 </style>
@@ -202,50 +188,64 @@ body {
   <div class="gap">
 <div class="banner">Soley's Design Notes</div>
 <h2>Lessons Learnt - Knowledge Table</h2>
+
 <!-- Seach Filter  -->
 <h3>Subject Filter</h3>
+<div style="position:relative"><div id="searchicon1"></div></div>
+<input type="text" id="searchstring1" name="search" placeholder="Search.." oninput="filterSearch()">
+
+<h3>Description Filter</h3>
 <div style="position:relative"><div id="searchicon"></div></div>
 <input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()">
 
-<h3>Description Filter</h3>
-<div style="position:relative"><div id="searchicon1"></div></div>
-<input type="text" id="searchstring1" name="search" placeholder="Search.." oninput="filterSearch1()">
-
 <table class="ws-table-all notranslate">
   <tr>
-    <td class="log-title" >Subject</td>
     <td class="log-desc" >Description</td>
   </tr>
   <!-- Start of new knowledge record-->
   <tr>
-    <td class="log-title"><a>git/github</a></td>
-    <td class="log-desc" ><a>
-    As someone who knew nothing at all of github, it was a surprise to learn that github sprung up out of 
+    <td class="log-desc" >
+      <a>
+        <div class="title-tag">git/github</div><br>
+        
+        As someone who knew nothing at all of github, it was a surprise to learn that github sprung up out of 
     providing a central bank of git repositories (projects). These repositories being either shared privately or publicly, enabling a secure development facility based on the git process. The git process being a versioning system. 
-    </a>
-    <a>
+  
     I registered with github several years ago in order to get components and ideas for java projects but I have never used it's versioning and security. I tended to manually backup my work at suitable restore points. Now that I have started using git, I can see the advantages of git to enforce work disciplines. I currently find navigating around the github pages rather confusing but with experience I am sure to resolve this issue.
-    </a>
+      </a>  
   </td>
   </tr>
   <!-- End of knowledge record -->
-  <!-- Start of knowledge record -->
+  <!-- Start of new knowledge record-->
   <tr>
-    <td class="log-title"><a>git/github</a></td>
-    <td class="log-desc" ><a>
-    a test record .
-    </a>
-   </td>
+    <td class="log-desc" >
+      <a>
+        <div class="title-tag">HTLM 5</div><br>
+        This is an HTML test  record 
+      </a>  
+  </td>
   </tr>
   <!-- End of knowledge record -->
+  <!-- Start of new knowledge record-->
   <tr>
-    <td  class="log-title"><a > Javascript</a></td>
-    <td class="log-desc" ><a>Specifies the alignment for items inside a flexible container</a></td>
+    <td class="log-desc" >
+      <a>
+        <div class="title-tag">Javascript</div><br>
+        This is an Javascript test  record 
+      </a>  
+  </td>
   </tr>
+  <!-- End of knowledge record -->
+  <!-- Start of new knowledge record-->
   <tr>
-    <td class="log-title" ><a>HTML 5</a></td>
-    <td class="log-desc" ><a> the alignment for selected items inside a flexible container</a></td>
+    <td class="log-desc" >
+      <a>
+        <div class="title-tag">Javascript</div><br>
+        The wolves are rubish 
+      </a>  
+  </td>
   </tr>
+  <!-- End of knowledge record -->
 </table>
 </div>
 </div>
