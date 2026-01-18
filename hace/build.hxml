@@ -1,4 +1,0 @@
--cp src
--js js/Main.js
--main Main
--resource data.json@data.json

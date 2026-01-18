@@ -1,6 +1,0 @@
-[
-  { "name": "Alice", "age": 33, "city": "London", "score": 88 },
-  { "name": "Bob",   "age": 25, "city": "Paris",  "score": 92 },
-  { "name": "Susan", "age": 34, "city": "Grimsby", "score": 90 },
-  { "name": "John",   "age": 26, "city": "Swansea",  "score": 89 }
-]
