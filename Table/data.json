@@ -1,0 +1,486 @@
+[
+    {
+        "name": "<a>",
+        "desc": "Defines a hyperlink."
+    },
+    {
+        "name": "<abbr>",
+        "desc": "Defines an abbreviated form of a longer word or phrase."
+    },
+    {
+        "name": "<acronym>",
+        "desc": "#Obsolete use <abbr> instead."
+    },
+    {
+        "name": "<address>",
+        "desc": "Specifies the author's contact information."
+    },
+    {
+        "name": "<applet>",
+        "desc": "#Obsolete use <object> instead."
+    },
+    {
+        "name": "<area>",
+        "desc": "Defines a specific area within an image map."
+    },
+    {
+        "name": "<article>",
+        "desc": "New in HTML5 - Defines an article."
+    },
+    {
+        "name": "<aside>",
+        "desc": "New in HTML5 - Defines some content loosely related to the page content."
+    },
+    {
+        "name": "<audio>",
+        "desc": "New in HTML5 - Embeds a sound, or an audio stream in an HTML document."
+    },
+    {
+        "name": "<b>",
+        "desc": "Displays text in a bold style."
+    },
+    {
+        "name": "<base>",
+        "desc": "Defines the base URL for all relative URLs in a document."
+    },
+    {
+        "name": "<basefont-name>",
+        "desc": "#Obsolete - Specifies the base font for a page using CSS instead."
+    },
+    {
+        "name": "<bdi-name>",
+        "desc": "New in HTML5 - Represents text that is isolated from its surrounding for the purposes of bidirectional text formatting."
+    },
+    {
+        "name": "<bdo>",
+        "desc": "Overrides the current text direction."
+    },
+    {
+        "name": "<big-name>",
+        "desc": "#Obsolete - Specifies the base font for a page using CSS instead."
+    },
+    {
+        "name": "<blockquote>",
+        "desc": "Represents a section that is quoted from another source."
+    },
+    {
+        "name": "<body>",
+        "desc": "Defines the document's body."
+    },
+    {
+        "name": "<br>",
+        "desc": "Produces a single line break."
+    },
+    {
+        "name": "<button>",
+        "desc": "Creates a clickable button."
+    },
+    {
+        "name": "<canvas>",
+        "desc": "New in HTML5 - Defines a region in the document, which can be used to draw graphics on the fly via scripting (usually}, JavaScript)."
+    },
+    {
+        "name": "<caption>",
+        "desc": "Defines the caption or title of the table."
+    },
+    {
+        "name": "<center>",
+        "desc": "#Obsolete - Align contents in the center using CSS instead."
+    },
+    {
+        "name": "<cite>",
+        "desc": "Indicates a citation or reference to another source."
+    },
+    {
+        "name": "<code>",
+        "desc": "Specifies text as computer code."
+    },
+    {
+        "name": "<col>",
+        "desc": "Defines attribute values for one or more columns in a table."
+    },
+    {
+        "name": "<colgroup>",
+        "desc": "Specifies attributes for multiple columns in a table."
+    },
+    {
+        "name": "<data>",
+        "desc": "New in HTML5 - Links a piece of content with a machine-readable translation."
+    },
+    {
+        "name": "<datalist>",
+        "desc": "New in HTML5 - Represents a set of pre-defined options for an input-name <input> element."
+    },
+    {
+        "name": "<dd>",
+        "desc": "Specifies adescription, or value for the term <dt> in adescription list <dl>."
+    },
+    {
+        "name": "<del>",
+        "desc": "Represents text that has been deleted from the document."
+    },
+    {
+        "name": "<details>",
+        "desc": "New in HTML5 - Represents a widget from which the user can obtain additional information or controls on-demand."
+    },
+    {
+        "name": "<dfn>",
+        "desc": "Specifies a definition."
+    },
+    {
+        "name": "<dialog>",
+        "desc": "New in HTML5 -Defines a dialog box or subwindow."
+    },
+    {
+        "name": "<dir>",
+        "desc": "#Obsolete - Use CSS instead."
+    },
+    {
+        "name": "<div>",
+        "desc": "Specifies a division or a section in a document."
+    },
+    {
+        "name": "<dl>",
+        "desc": "Defines adescription list."
+    },
+    {
+        "name": "<dt>",
+        "desc": "Defines a term (an item) in adescription list."
+    },
+    {
+        "name": "<em>",
+        "desc": "Defines emphasized text."
+    },
+    {
+        "name": "<embed>",
+        "desc": "New in HTML5 - Embeds external application, typically multimedia content like audio or video into an HTML document."
+    },
+    {
+        "name": "<fieldset>",
+        "desc": "Specifies a set of related form fields."
+    },
+    {
+        "name": "<figcaption>",
+        "desc": "New in HTML5 - Defines a caption or legend for a figure."
+    },
+    {
+        "name": "<figure>",
+        "desc": "New in HTML5 - Represents a figure illustrated as part of the document."
+    },
+    {
+        "name": "<font>",
+        "desc": "#Obsolete - Specifies the base font for a page using CSS instead."
+    },
+    {
+        "name": "<footer>",
+        "desc": "New in HTML5 - Represents the footer of a document or a section."
+    },
+    {
+        "name": "<form>",
+        "desc": "Defines an HTML form for user input."
+    },
+    {
+        "name": "<frame>",
+        "desc": "#Obsolete - Defines a frames. supported. Not supported in HTML5."
+    },
+    {
+        "name": "<frameset>",
+        "desc": "#Obsolete - Defines a collection of frames or other frameset. Not supported in HTML5."
+    },
+    {
+        "name": "<head>",
+        "desc": "Defines the head portion of the document that contains information about the document such as title."
+    },
+    {
+        "name": "<header>",
+        "desc": "New in HTML5 - Represents the header of a document or a section."
+    },
+    {
+        "name": "<hgroup>",
+        "desc": "New in HTML5 - Defines a group of headings."
+    },
+    {
+        "name": "<h1>to <h6>",
+        "desc": "Defines HTML headings."
+    },
+    {
+        "name": "<hr>",
+        "desc": "Produce a horizontal line."
+    },
+    {
+        "name": "<html>",
+        "desc": "Defines the root of an HTML document."
+    },
+    {
+        "name": "<i>",
+        "desc": "Displays text in an italic style."
+    },
+    {
+        "name": "<iframe>",
+        "desc": "Displays a URL in an inline frame."
+    },
+    {
+        "name": "<img>",
+        "desc": "Represents an image."
+    },
+    {
+        "name": "<input>",
+        "desc": "Defines an input control."
+    },
+    {
+        "name": "<ins>",
+        "desc": "Defines a block of text that has been inserted into a document."
+    },
+    {
+        "name": "<kbd>",
+        "desc": "Specifies text as keyboard input."
+    },
+    {
+        "name": "<keygen>",
+        "desc": "New in HTML5 - Represents a control for generating a public-private key pair."
+    },
+    {
+        "name": "<label>",
+        "desc": "Defines a label for an <input> control."
+    },
+    {
+        "name": "<legend>",
+        "desc": "Defines a caption for a <fieldset> element."
+    },
+    {
+        "name": "<li>",
+        "desc": "Defines a list item."
+    },
+    {
+        "name": "<link>",
+        "desc": "Defines the relationship between the current document and an external resource."
+    },
+    {
+        "name": "<main>",
+        "desc": "New in HTML5 - Represents the main or dominant content of the document."
+    },
+    {
+        "name": "<map>",
+        "desc": "Defines a client-side image-map."
+    },
+    {
+        "name": "<mark>",
+        "desc": "New in HTML5 - Represents text highlighted for reference purposes."
+    },
+    {
+        "name": "<menu>",
+        "desc": "Represents a list of commands."
+    },
+    {
+        "name": "<menuitem>",
+        "desc": "New in HTML5 - Defines a list (or menuitem) of commands that a user can perform."
+    },
+    {
+        "name": "<meta>",
+        "desc": "Provides structured metadata about the document content."
+    },
+    {
+        "name": "<meter>",
+        "desc": "New in HTML5 - Represents a scalar measurement within a known range."
+    },
+    {
+        "name": "<nav>",
+        "desc": "New in HTML5 - Defines a section of navigation links."
+    },
+    {
+        "name": "<noframes>",
+        "desc": "#Obsolete - Defines an alternate content that displays in browsers. Not supported in HTML5."
+    },
+    {
+        "name": "<noscript>",
+        "desc": "Defines alternative content to display when the browser doesn't support scripting."
+    },
+    {
+        "name": "<object>",
+        "desc": "Defines an embedded object."
+    },
+    {
+        "name": "<ol>",
+        "desc": "Defines an ordered list."
+    },
+    {
+        "name": "<optgroup>",
+        "desc": "Defines a group of related options in a selection list."
+    },
+    {
+        "name": "<option>",
+        "desc": "Defines an option in a selection list."
+    },
+    {
+        "name": "<output>",
+        "desc": "New in HTML5 - Represents the result of a calculation."
+    },
+    {
+        "name": "<p>",
+        "desc": "Defines a paragraph."
+    },
+    {
+        "name": "<param>",
+        "desc": "Defines a parameter for an object or applet element."
+    },
+    {
+        "name": "<picture>",
+        "desc": "New in HTML5 - >Defines a container for multiple image sources."
+    },
+    {
+        "name": "<pre>",
+        "desc": "Defines a block of preformatted text."
+    },
+    {
+        "name": "<progress>",
+        "desc": "New in HTML5 - Represents the completion progress of a task."
+    },
+    {
+        "name": "<q>",
+        "desc": "Defines a short inline quotation."
+    },
+    {
+        "name": "<rp>",
+        "desc": "New in HTML5 - Provides fall-back parenthesis for browsers that that don't support ruby annotations."
+    },
+    {
+        "name": "<rt>",
+        "desc": "New in HTML5 - Defines the pronunciation of character presented in a ruby annotations."
+    },
+    {
+        "name": "<ruby>",
+        "desc": "New in HTML5 - Represents a ruby annotation."
+    },
+    {
+        "name": "<s>",
+        "desc": "Represents contents that are no longer accurate or no longer relevant."
+    },
+    {
+        "name": "<samp>",
+        "desc": "Specifies text as sample output from a computer program."
+    },
+    {
+        "name": "<script>",
+        "desc": "Places script in the document for client-side processing."
+    },
+    {
+        "name": "<section>",
+        "desc": "New in HTML5 - Defines a section of a document, such as header, footer etc."
+    },
+    {
+        "name": "<select>",
+        "desc": "Defines a selection list within a form."
+    },
+    {
+        "name": "<small>",
+        "desc": "Displays text in a smaller size."
+    },
+    {
+        "name": "<source>",
+        "desc": "New in HTML5 - Defines alternative media resources for the media elements like audio-name or video-name"
+    },
+    {
+        "name": "<span>",
+        "desc": "Defines an inline styleless section in a document."
+    },
+    {
+        "name": "<strike>",
+        "desc": "#Obsolete - Specifies the base font for a page using CSS instead."
+    },
+    {
+        "name": "<strong>",
+        "desc": "Indicate strongly emphasized text."
+    },
+    {
+        "name": "<style>",
+        "desc": "Inserts style information (commonly CSS) into the head of a document."
+    },
+    {
+        "name": "<sub>",
+        "desc": "Defines subscripted text."
+    },
+    {
+        "name": "<summary>",
+        "desc": "New in HTML5 - Defines a summary for the details-name"
+    },
+    {
+        "name": "<sup>",
+        "desc": "Defines superscripted text."
+    },
+    {
+        "name": "<svg>",
+        "desc": "New in HTML5 - Embed SVG (Scalable Vector Graphics) content in an HTML document."
+    },
+    {
+        "name": "<table>",
+        "desc": "Defines a data table."
+    },
+    {
+        "name": "<tbody>",
+        "desc": "Groups a set of rows defining the main body of the table data."
+    },
+    {
+        "name": "<td>",
+        "desc": "Defines a cell in a table."
+    },
+    {
+        "name": "<template>",
+        "desc": "New in HTML5 - Defines the fragments of HTML that should be hidden when the page is loaded, but can be cloned and inserted in the document by JavaScript."
+    },
+    {
+        "name": "<textarea>",
+        "desc": "Defines a multi-line text input control (text area)."
+    },
+    {
+        "name": "<tfoot>",
+        "desc": "Groups a set of rows summarizing the columns of the table."
+    },
+    {
+        "name": "<th>",
+        "desc": "Defines a header cell in a table."
+    },
+    {
+        "name": "<thead>",
+        "desc": "Groups a set of rows thatdescribes the column labels of a table."
+    },
+    {
+        "name": "<time>",
+        "desc": "New in HTML5 - Represents a time and/or date."
+    },
+    {
+        "name": "<title>",
+        "desc": "Defines a title for the document."
+    },
+    {
+        "name": "<tr>",
+        "desc": "Defines a row of cells in a table."
+    },
+    {
+        "name": "<track>",
+        "desc": "New in HTML5 - Defines text tracks for the media elements like audio-name <audio> or video-name <video>."
+    },
+    {
+        "name": "<tt>",
+        "desc": "#Obsolete - Displays text in a teletype style. Not supported in HTML5"
+    },
+    {
+        "name": "<u>",
+        "desc": "Displays text with an underline."
+    },
+    {
+        "name": "<ul>",
+        "desc": "Defines an unordered list."
+    },
+    {
+        "name": "<var>",
+        "desc": "Defines a variable."
+    },
+    {
+        "name": "<video>",
+        "desc": "New in HTML5 - Embeds video content in an HTML document."
+    },
+    {
+        "name": "<wbr>",
+        "desc": "New in HTML5 - Represents a line break opportunity."
+    }
+]

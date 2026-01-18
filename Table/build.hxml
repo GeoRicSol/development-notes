@@ -1,0 +1,4 @@
+-p src/html5-ref
+-js js/Main.js
+-main Main
+-resource data.json@data.json
